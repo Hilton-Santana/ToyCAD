@@ -3,7 +3,7 @@
 
 // includes
 //----------
-#include "point.h"
+#include "compgeom/point.h"
 
 // STL C++
 #include <vector>

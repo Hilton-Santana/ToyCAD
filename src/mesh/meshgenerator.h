@@ -2,7 +2,7 @@
 #define _MESHGENERATOR
 
 
-#include "point.h"
+#include "compgeom/point.h"
 #include <vector>
 using namespace std;
 

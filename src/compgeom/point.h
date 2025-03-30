@@ -11,19 +11,19 @@ class Point
  friend inline bool   equal      (Point& p1, Point& p2, Point& tol);
  friend inline bool   operator== (Point& p1, Point& p2);
  friend inline bool   operator!= (Point& p1, Point& p2);
- friend inline Point  operator+  (Point& p1, Point& p2);
+ friend inline Point  operator+  (Point p1, Point p2);
  friend inline Point& operator+= (Point& p1, Point& p2);
- friend inline Point  operator-  (Point& p1, Point& p2);
+ friend inline Point  operator-  (Point p1, Point p2);
  friend inline Point& operator-= (Point& p1, Point& p2);
- friend inline Point  operator*  (Point& p,  double s);
- friend inline Point  operator*  (double s,  Point& p);
- friend inline Point  operator/  (Point& p,  double s);
+ friend inline Point  operator*  (Point p,  double s);
+ friend inline Point  operator*  (double s,  Point p);
+ friend inline Point  operator/  (Point p,  double s);
  friend inline double euclidiandistance (Point& p1, Point& p2);
  friend inline double manhattandistance (Point& p1, Point& p2);
  friend inline double sizesquare (Point& p);
- friend inline double size       (Point& p);
- friend inline double dotprod    (Point& p1, Point& p2);
- friend inline double crossprod  (Point& p1, Point& p2);
+ friend inline double size       (Point p);
+ friend inline double dotprod    (Point p1, Point p2);
+ friend inline double crossprod  (Point p1, Point p2);
  friend inline Point  normalize  (Point p);
  friend inline double area2d     (Point& p1, Point& p2, Point& p3 );
  friend inline std::ostream& operator<< (std::ostream& cout, Point& p);
@@ -68,7 +68,7 @@ bool operator!= (Point& p1, Point& p2)
 
 /// Addition.
 inline
-Point operator+ (Point& p1, Point& p2)
+Point operator+ (Point p1, Point p2)
 {
  return Point(p1.m_x+p2.m_x, p1.m_y+p2.m_y);
 }
@@ -82,7 +82,7 @@ Point& operator+= (Point& p1, Point& p2)
 
 /// Subtraction.
 inline
-Point operator- (Point& p1, Point& p2)
+Point operator- (Point p1, Point p2)
 {
  return Point(p1.m_x-p2.m_x,p1.m_y-p2.m_y);
 }
@@ -96,20 +96,20 @@ Point& operator-= (Point& p1, Point& p2)
 
 /// Scalar multiplication.
 inline
-Point operator* (Point& p, double s)
+Point operator* (Point p, double s)
 {
  return Point(p.m_x*s,p.m_y*s);
 }
 /// Scalar multiplication.
 inline
-Point operator* (double s, Point& p)
+Point operator* (double s, Point p)
 {
  return Point(p.m_x*s,p.m_y*s);
 }
 
 /// Division by scalar.
 inline
-Point operator/ (Point& p, double s)
+Point operator/ (Point p, double s)
 {
  if( s == 0.0 )
   return Point(0.0,0.0);
@@ -140,21 +140,21 @@ double sizesquare (Point& p)
 
 /// Size (vector).
 inline
-double size (Point& p)
+double size (Point p)
 {
  return sqrt(sizesquare(p));
 }
 
 /// Dot product (vector).
 inline
-double dotprod (Point& p1, Point& p2)
+double dotprod (Point p1, Point p2)
 {
  return p1.m_x*p2.m_x + p1.m_y*p2.m_y;
 }
 
 /// Cross product (vector).
 inline
-double crossprod (Point& p1, Point& p2)
+double crossprod (Point p1, Point p2)
 {
  return p1.m_x*p2.m_y - p2.m_x*p1.m_y;
 }

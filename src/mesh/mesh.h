@@ -1,7 +1,7 @@
 #ifndef MESH_H
 #define MESH_H
 
-#include "point.h"
+#include "compgeom/point.h"
 #include <vector>
 using namespace std;
 

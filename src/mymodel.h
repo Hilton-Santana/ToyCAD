@@ -4,7 +4,7 @@
 #include <vector>
 using namespace std;
 
-#include "point.h"
+#include "compgeom/point.h"
 #include "color.h"
 #include "curves/curve.h"
 #include "region.h"
