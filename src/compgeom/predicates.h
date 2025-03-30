@@ -1,8 +1,11 @@
-
 #ifndef __CGCPREDICATES_H__
 #define __CGCPREDICATES_H__
 
 	//double err;
+
+  #ifdef __cplusplus
+    extern "C" {
+  #endif
 
 	void exactinit ( void );
 	double orient2d      ( double* pa, double* pb, double* pc );
@@ -29,5 +32,8 @@
 
 	double getfpuprecision ( void );
 
-#endif // __CGCPREDICATES_H__
+  #ifdef __cplusplus
+  }
+  #endif
 
+#endif // __CGCPREDICATES_H__
