@@ -4,10 +4,7 @@
 #include <string>
 #include <sstream>
 
-extern "C"
-{
 #include "triangle.h"
-}
 
 
 //-------------------------------------------------------------------------
