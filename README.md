@@ -7,10 +7,27 @@ on Linux machines.
 Here are all the features inside the app:
 - Canvas interaction: fit world to viewport, translate world, zoom in and zoom out, snap to grid
 - Curve management: draw and delete the following set of curves: line, polyline, circle, arc of circle, 
-quadratic Bézier, cubic Bézier and curve intersection
+quadratic Bézier and cubic Bézier. There is also one constructor operation: curve intersection
 - Mesh Generation: Once your set of curves encloses a bounded region, you can define a mesh for it
 with three distinct methods: bilinear mapping (for regions with four distinct curves), trilinear mapping (for regions
 with three distinct curves) and delaunay triangulation (works for any region)
 
 A demo with some features is shown in the following gif:
 ![](media/toycad.gif)
+
+# Pre-Requisites
+- The project is managed with cmake which can be installed in [here](https://cmake.org/download/)
+- You must also install QT5, on Linux this can be done with:
+```
+sudo apt-get install qtbase5-dev
+```
+
+# Usage
+```
+git clone https://github.com/Hilton-Santana/ToyCAD.git
+cd ToyCAD
+cmake -B build
+cmake --build build
+cd build
+./toycad 
+```
