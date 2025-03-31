@@ -39,3 +39,7 @@ target_link_libraries(cad PUBLIC Qt5::Widgets
                                  predicates
                                  compgeom
                                  triangle)
+
+# Copy icons folder to build directory
+file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/src/icons 
+          DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
