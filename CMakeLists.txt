@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.23.0)
-project(cad VERSION 0.0.1 LANGUAGES CXX)
+project(toycad  VERSION 0.0.1 LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 14)
 
 #######################################
@@ -7,7 +7,7 @@ set(CMAKE_CXX_STANDARD 14)
 #######################################
 set(CAD_TOP_LEVEL_PROJECT ${PROJECT_IS_TOP_LEVEL})
 option(CAD_TESTS "Generate the tests target" ${CAD_TOP_LEVEL_PROJECT})
-option(CAD_STATIC "Build cad as a static library" YES)
+option(CAD_STATIC "Build toycad  as a static library" YES)
 
 #######################################
 # Handle QT auxiliar files
@@ -25,7 +25,7 @@ add_subdirectory(extern)
 #######################################
 # Define main target
 #######################################
-add_executable(cad "")
+add_executable(toycad  "")
 add_subdirectory(src)
 
 #######################################
@@ -33,7 +33,7 @@ add_subdirectory(src)
 #######################################
 find_package(Qt5 REQUIRED COMPONENTS OpenGL Widgets)
 find_package(OpenGL REQUIRED)
-target_link_libraries(cad PUBLIC Qt5::Widgets
+target_link_libraries(toycad  PUBLIC Qt5::Widgets
                                  Qt5::OpenGL
                                  OpenGL::GL
                                  predicates

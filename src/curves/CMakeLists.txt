@@ -16,6 +16,6 @@ set(export
     polyline.h
     quadbezier.h)
 
-target_sources(cad 
+target_sources(toycad  
                PRIVATE ${source}
                PUBLIC FILE_SET HEADERS FILES ${exports})

@@ -24,7 +24,7 @@ set (sub_dirs
      curves
      mesh)
 
-target_sources(cad 
+target_sources(toycad  
                PRIVATE ${source}
                PUBLIC FILE_SET HEADERS FILES ${exports})
 

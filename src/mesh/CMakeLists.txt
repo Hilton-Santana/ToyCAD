@@ -11,6 +11,6 @@ set(exports
     transfinbilinear.h
     transfintrilinear.h)
 
-target_sources(cad 
+target_sources(toycad  
                PRIVATE ${source}
                PUBLIC FILE_SET HEADERS FILES ${exports})
