@@ -5,8 +5,8 @@ on Linux machines.
 
 # Features
 Here are all the features inside the app:
-- Canvas interaction: fit world to viewport, translate world, zoom in and zoom out, snap to grid
-- Curve management: draw and delete the following set of curves: line, polyline, circle, arc of circle, 
+- Canvas Interaction: fit world to viewport, translate world, zoom in and zoom out, snap to grid
+- Curve Management: draw and delete the following set of curves: line, polyline, circle, arc of circle, 
 quadratic Bézier and cubic Bézier. There is also one constructor operation: curve intersection
 - Mesh Generation: Once your set of curves encloses a bounded region, you can define a mesh for it
 with three distinct methods: bilinear mapping (for regions with four distinct curves), trilinear mapping (for regions
