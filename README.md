@@ -1,6 +1,6 @@
 # ToyCAD
 ToyCAD is a toy version of a Computer Aided Design (CAD) system written in C++. This 
-was also my fifth project for the class Sistemas Gráficos para Engenharia - 2020.1, see [here](http://webserver2.tecgraf.puc-rio.br/~lfm/compgraf-201/) for more informations. Currently, the application is only compilling
+was also my fifth project for the class Sistemas Gráficos para Engenharia - 2020.1, see [here](http://webserver2.tecgraf.puc-rio.br/~lfm/compgraf-201/) for more information. Currently, the application is only compiling
 on Linux machines. 
 
 # Features
@@ -16,8 +16,8 @@ A demo with some features is shown in the following gif:
 ![](media/toycad.gif)
 
 # Pre-Requisites
-- The project is managed with cmake which can be installed in [here](https://cmake.org/download/)
-- You must also install QT5, on Linux this can be done with:
+- The project is managed with CMake, which can be installed in [here](https://cmake.org/download/)
+- You must also install QT5, on Linux/Ubuntu, this can be done with:
 ```
 sudo apt-get install qtbase5-dev
 ```
