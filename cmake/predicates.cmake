@@ -10,6 +10,3 @@ FetchContent_Declare(predicates
 )
 
 FetchContent_MakeAvailable(predicates)
-if (TARGET predicates)
-  message(STATUS "predicates target found")
-endif()
