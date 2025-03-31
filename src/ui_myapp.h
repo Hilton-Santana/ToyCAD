@@ -230,7 +230,7 @@ public:
 
     void retranslateUi(QMainWindow *MyAppClass)
     {
-        MyAppClass->setWindowTitle(QApplication::translate("MyAppClass", "SimpleMesh", 0));
+        MyAppClass->setWindowTitle(QApplication::translate("MyAppClass", "ToyCAD", 0));
         actionFit->setText(QApplication::translate("MyAppClass", "Fit", 0));
 #ifndef QT_NO_TOOLTIP
         actionFit->setToolTip(QApplication::translate("MyAppClass", "Adjust object image to fit on canvas", 0));
